@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/trigger.py": {
-      "runtime": "@vercel/python",
+      "runtime": "vercel-python@2.0.0",  // CORRECTED LINE
       "maxDuration": 60,
       "memory": 1024
     }
