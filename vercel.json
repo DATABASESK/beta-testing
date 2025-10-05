@@ -6,13 +6,4 @@
       "memory": 1024
     }
   }
-  // <-- ERROR: This is where the file should end, but you have an extra brace:
-  }, 
-  // <-- ERROR: And an extra comma:
-  "builds": [
-    {
-      "src": "api/trigger.py",
-      "use": "@vercel/python"
-    }
-  ]
 }
