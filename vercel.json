@@ -2,10 +2,6 @@
   "functions": {
     "api/trigger.py": {
       "runtime": "@vercel/python", 
-      
-      "config": {
-        "runtime": "python3.9" 
-      },
       "maxDuration": 60,
       "memory": 1024
     }
