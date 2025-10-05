@@ -1,9 +1,19 @@
 {
   "functions": {
     "api/trigger.py": {
-      "runtime": "@vercel/python@5.0.0",
+      "runtime": "@vercel/python@5.0.0", 
       "maxDuration": 60,
       "memory": 1024
     }
-  }
+  },
+  "routes": [
+    { 
+      "src": "/api/trigger",  // Match requests to /api/trigger
+      "dest": "/api/trigger.py" // Send them to the Python file
+    },
+    { 
+      "src": "/(.*)",           // Match everything else
+      "dest": "/api/trigger.py" // Send it to the Python function (optional, but robust)
+    }
+  ]
 }
