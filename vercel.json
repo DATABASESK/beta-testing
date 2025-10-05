@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "api/trigger.py": {
+      "runtime": "@vercel/python",
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  },
+  "builds": [
+    {
+      "src": "api/trigger.py",
+      "use": "@vercel/python"
+    }
+  ]
+}
