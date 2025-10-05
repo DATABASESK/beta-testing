@@ -1,10 +1,8 @@
 {
   "functions": {
     "api/trigger.py": {
-      // Use the official builder name
       "runtime": "@vercel/python", 
       
-      // CRITICAL: Specify the Python version in the config object
       "config": {
         "runtime": "python3.9" 
       },
